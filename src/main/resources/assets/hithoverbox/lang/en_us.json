@@ -1,0 +1,6 @@
+{
+  "category.hithoverbox": "HitHoverBox",
+  "key.hithoverbox.toggle": "Toggle",
+  "debug.hithoverbox.on": "Hitboxes will only show on hovered entities",
+  "debug.hithoverbox.off": "Hitboxes will show on all entities"
+}

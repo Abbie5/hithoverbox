@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "hithoverbox",
+  "version": "${version}",
+
+  "name": "HitHoverBox",
+  "description": "Only show hitboxes of entities you're looking at",
+  "authors": [
+    "Abbie"
+  ],
+  "contact": {
+    "sources": "https://github.com/peanutbutter144/hithoverbox"
+  },
+
+  "license": "MIT",
+  "icon": "assets/hithoverbox/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "cc.abbie.hithoverbox.client.HitHoverBoxClient"
+    ]
+  },
+  "mixins": [
+    "hithoverbox.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.8",
+    "minecraft": "1.19.1",
+    "fabric-api-base": "*",
+    "fabric-lifecycle-events-v1": "*",
+    "fabric-key-binding-api-v1": "*"
+  }
+}
