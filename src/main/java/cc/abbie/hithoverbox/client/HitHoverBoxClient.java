@@ -25,9 +25,9 @@ public class HitHoverBoxClient implements ClientModInitializer {
 
     private static void toggle(Minecraft client) {
         enabled = !enabled;
-        client.player.sendSystemMessage(Component.translatable(
+        client.player.displayClientMessage(Component.translatable(
                 enabled ? "debug.hithoverbox.on" : "debug.hithoverbox.off"
-        ));
+        ), false);
     }
 
     @Override
