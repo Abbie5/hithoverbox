@@ -17,7 +17,7 @@ public class EntityRenderDispatcherMixin {
         return entity.equals(Minecraft.getInstance().crosshairPickEntity);
     }
     @Inject(method = "renderHitbox", at = @At("HEAD"), cancellable = true)
-    private static void onlyRenderOnHoveredEntity(PoseStack poseStack, VertexConsumer vertexConsumer, Entity entity, float f, CallbackInfo ci) {
+    private static void onlyRenderOnHoveredEntity(PoseStack poseStack, VertexConsumer vertexConsumer, Entity entity, float f, float g, float h, float i, CallbackInfo ci) {
         if (!playerIsLookingAt(entity) && HitHoverBoxClient.enabled) {
             ci.cancel();
         }
